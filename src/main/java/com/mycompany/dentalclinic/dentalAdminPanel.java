@@ -39,23 +39,24 @@ public class dentalAdminPanel extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
 
-        adminUsername.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        adminUsername.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         adminUsername.setBorder(null);
         jPanel1.add(adminUsername);
-        adminUsername.setBounds(240, 300, 270, 25);
+        adminUsername.setBounds(240, 300, 250, 20);
 
-        adminPassword.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        adminPassword.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         adminPassword.setBorder(null);
         jPanel1.add(adminPassword);
-        adminPassword.setBounds(240, 370, 270, 30);
+        adminPassword.setBounds(240, 365, 250, 20);
 
         loginBtn.setBorderPainted(false);
         loginBtn.setContentAreaFilled(false);
         loginBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel1.add(loginBtn);
-        loginBtn.setBounds(290, 450, 130, 30);
+        loginBtn.setBounds(290, 430, 120, 30);
 
         returnBtn.setBorderPainted(false);
         returnBtn.setContentAreaFilled(false);
@@ -67,7 +68,7 @@ public class dentalAdminPanel extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 710, 533);
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 533));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 530));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
