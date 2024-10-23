@@ -30,14 +30,11 @@ public class dentalLoginFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        exitText1 = new javax.swing.JLabel();
-        exitText = new javax.swing.JLabel();
-        guestBtn = new javax.swing.JButton();
-        signupBtn = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        empBtn = new javax.swing.JButton();
-        empTxt = new javax.swing.JLabel();
         guestTxt = new javax.swing.JLabel();
+        empTxt = new javax.swing.JLabel();
+        guestBtn = new javax.swing.JButton();
+        exitBtn = new javax.swing.JButton();
+        empBtn = new javax.swing.JButton();
         userLoginBG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -47,15 +44,17 @@ public class dentalLoginFrame extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(null);
 
-        exitText1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        exitText1.setText("to get started!");
-        jPanel2.add(exitText1);
-        exitText1.setBounds(460, 470, 110, 30);
+        guestTxt.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        guestTxt.setForeground(new java.awt.Color(120, 139, 255));
+        guestTxt.setText("Guest");
+        jPanel2.add(guestTxt);
+        guestTxt.setBounds(280, 340, 80, 25);
 
-        exitText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        exitText.setText("Don't have an account?  Guests can");
-        jPanel2.add(exitText);
-        exitText.setBounds(160, 470, 230, 30);
+        empTxt.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        empTxt.setForeground(new java.awt.Color(120, 139, 255));
+        empTxt.setText("Employee / Admin");
+        jPanel2.add(empTxt);
+        empTxt.setBounds(280, 400, 160, 50);
 
         guestBtn.setBorderPainted(false);
         guestBtn.setContentAreaFilled(false);
@@ -69,34 +68,13 @@ public class dentalLoginFrame extends javax.swing.JFrame {
             }
         });
         jPanel2.add(guestBtn);
-        guestBtn.setBounds(210, 270, 300, 70);
+        guestBtn.setBounds(210, 320, 300, 60);
 
-        signupBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        signupBtn.setForeground(new java.awt.Color(120, 139, 255));
-        signupBtn.setText("click here");
-        signupBtn.setBorderPainted(false);
-        signupBtn.setContentAreaFilled(false);
-        signupBtn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                signupBtnMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                signupBtnMouseExited(evt);
-            }
-        });
-        signupBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                signupBtnActionPerformed(evt);
-            }
-        });
-        jPanel2.add(signupBtn);
-        signupBtn.setBounds(370, 470, 100, 30);
-
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(jButton1);
-        jButton1.setBounds(40, 40, 50, 60);
+        exitBtn.setBorderPainted(false);
+        exitBtn.setContentAreaFilled(false);
+        exitBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(exitBtn);
+        exitBtn.setBounds(40, 40, 50, 60);
 
         empBtn.setBorderPainted(false);
         empBtn.setContentAreaFilled(false);
@@ -110,54 +88,32 @@ public class dentalLoginFrame extends javax.swing.JFrame {
             }
         });
         jPanel2.add(empBtn);
-        empBtn.setBounds(210, 370, 300, 70);
-
-        empTxt.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
-        empTxt.setText("Employee / Admin");
-        jPanel2.add(empTxt);
-        empTxt.setBounds(300, 385, 160, 40);
-
-        guestTxt.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
-        guestTxt.setText("Guest");
-        jPanel2.add(guestTxt);
-        guestTxt.setBounds(300, 285, 80, 40);
+        empBtn.setBounds(210, 390, 300, 70);
 
         userLoginBG.setIcon(new javax.swing.ImageIcon("C:\\Users\\Maggie\\Desktop\\ClearView Images\\userLogin.png")); // NOI18N
         jPanel2.add(userLoginBG);
         userLoginBG.setBounds(0, 0, 710, 530);
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 550));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 530));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void signupBtnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signupBtnMouseEntered
-        signupBtn.setForeground(Color.decode("#2c45bc"));
-    }//GEN-LAST:event_signupBtnMouseEntered
-
-    private void signupBtnMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signupBtnMouseExited
-        signupBtn.setForeground(Color.decode("#788bff"));
-    }//GEN-LAST:event_signupBtnMouseExited
-
     private void guestBtnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_guestBtnMouseEntered
-        guestTxt.setForeground(Color.decode("#788bff"));
+        guestTxt.setForeground(Color.decode("#4b64b7"));
     }//GEN-LAST:event_guestBtnMouseEntered
 
     private void guestBtnMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_guestBtnMouseExited
-        guestTxt.setForeground(Color.decode("#000000"));
+        guestTxt.setForeground(Color.decode("#788bff"));
     }//GEN-LAST:event_guestBtnMouseExited
 
     private void empBtnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_empBtnMouseEntered
-        empTxt.setForeground(Color.decode("#788bff"));
+        empTxt.setForeground(Color.decode("#4b64b7"));
     }//GEN-LAST:event_empBtnMouseEntered
 
     private void empBtnMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_empBtnMouseExited
-        empTxt.setForeground(Color.decode("#000000"));
+        empTxt.setForeground(Color.decode("#788bff"));
     }//GEN-LAST:event_empBtnMouseExited
-
-    private void signupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_signupBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -197,13 +153,10 @@ public class dentalLoginFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton empBtn;
     private javax.swing.JLabel empTxt;
-    private javax.swing.JLabel exitText;
-    private javax.swing.JLabel exitText1;
+    private javax.swing.JButton exitBtn;
     private javax.swing.JButton guestBtn;
     private javax.swing.JLabel guestTxt;
-    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JButton signupBtn;
     private javax.swing.JLabel userLoginBG;
     // End of variables declaration//GEN-END:variables
 }
